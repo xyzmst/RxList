@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_menu_text_color">#0EA3F9</color>
+    <color name="default_title_color">#222222</color>
+    <color name="default_text_color">#555555</color>
+    <color name="test_bgcolor">#000E1B</color>
+    <color name="test_titilebarcolor">#1581C8</color>
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="eighty_transparent">#CC000000</color>
+    <color name="seventy_transparent">#B2000000</color>
+    <color name="twenty_transparent">#33000000</color>
+    <color name="half_transparent">#64000000</color>
+    <color name="thirty_transparent">#1E000000</color>
+    <color name="sixty_transparent">#99000000</color>
+    <color name="ten_transparent">#19000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="list_item_bg_color_white_pressed">#EEEEEE</color>
+    <color name="list_item_bg_color_gray">#F3F3F3</color>
+    <color name="list_item_bg_color_gray_pressed">#DDDDDD</color>
+    <color name="green_55c4c4">#55c4c4</color>
+    <color name="green_00d9a3">#00d9a3</color>
+    <color name="green_09d9a6">#09d9a6</color>
+    <color name="yellow_ffbf00">#ffbf00</color>
+    <color name="gray_999999">#999999</color>
+    <color name="gray_8c8c8c">#8c8c8c</color>
+
+    <color name="black_5B5B5B">#5B5B5B</color>
+    <color name="black_CCCCCC">#CCCCCC</color>
+    <color name="black_1F1F1F">#1F1F1F</color>
+
+    <color name="orange_ff8000">#ff8000</color>
+    <color name="blue_0EA3F9">#0EA3F9</color>
+    <color name="blue_0DA1F8">#0DA1F8</color>
+    <color name="blue_047DC6">#047DC6</color>
+    <color name="blue_149BEB">#149BEB</color>
+    <color name="blue_0EA2F8">#0EA2F8</color>
+    <color name="blue_0093FF">#0093ff</color>
+    <color name="lighter_gray">#ddd</color>
+    <color name="rank_red_first">#FF0000</color>
+    <color name="rank_red_second">#FF4000</color>
+    <color name="rand_red_third">#FF7F00</color>
+
+    <color name="fb_popup_btn_normal">#f7f7f7</color>
+    <color name="fb_popup_btn_pressed">#e8e8e8</color>
+    <color name="fb_mofun_text_color">#4d4d4d</color>
+    <color name="fb_user_text_color">#ffffff</color>
+
+    <color name="tab_current_txt_color">#0ca3f8</color>
+    <color name="tab_others_txt_color">#464646</color>
+    <color name="sign_text">#3f3f3f</color>
+    <color name="sign_expl_full_text">#c6c6c6</color>
+    <color name="bar_color_dark">#292020</color>
+    <color name="all_background">#f6f6f6</color>
+    <color name="play_half_dark">#80000000</color>
+    <color name="sign_in_left_text">#444444</color>
+    <color name="global_backgroud_color">#f0f0f0</color>
+    <color name="star_voice_bg">#0e1920</color>
+    <color name="voice">#ffd322</color>
+    <color name="voice_text">#a97001</color>
+    <color name="voice_text_">#393939</color>
+
+</resources>
