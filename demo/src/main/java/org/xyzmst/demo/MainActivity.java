@@ -13,6 +13,7 @@ import org.xyzmst.rxlist.adapter.RxSimpleViewHolder;
 import org.xyzmst.rxlist.util.RxListActivity;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 import rx.Observable;
 
@@ -45,7 +46,7 @@ public class MainActivity extends RxListActivity {
                             rxBaseData.list.add(mFragment.cursor+i + "");
                         }
                         rxBaseData.count = 200;
-                        return Observable.just(rxBaseData);
+                        return Observable.just(rxBaseData).delay(2, TimeUnit.SECONDS);
                     }
 
                     @Override

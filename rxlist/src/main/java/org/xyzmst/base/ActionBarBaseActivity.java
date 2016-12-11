@@ -90,31 +90,7 @@ public class ActionBarBaseActivity extends ActionBarActivity {
         return ldf;
     }
 
-    @Deprecated
-    public final
-    @Nullable
-    LoadingDialogFragment setLoadingProgress(int progress) {
-        if (getLoadingDailog() == null) {
-            return null;
-        } else {
-            LoadingDialogFragment ldf = getLoadingDailog();
-            ldf.setProgress(progress);
-            return ldf;
-        }
-    }
 
-    @Deprecated
-    public final
-    @Nullable
-    LoadingDialogFragment setLoadingMax(int max) {
-        if (getLoadingDailog() == null) {
-            return null;
-        } else {
-            LoadingDialogFragment ldf = getLoadingDailog();
-            ldf.setMax(max);
-            return ldf;
-        }
-    }
 
     @Deprecated
     public final void hideLoadingDialog() {
