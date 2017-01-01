@@ -1,0 +1,176 @@
+{
+    "android_gradle_plugin_version": "2.2.2",
+    "apk_path": "/Users/mst/AndroidStudioProjects/RxList/demo/build/outputs/apk/demo-ADEBUG-debug.apk",
+    "apt": {
+        "demo": {
+            "aptArgs": [
+                
+            ],
+            "aptOutput": "/Users/mst/AndroidStudioProjects/RxList/demo/build/generated/source/apt/ADEBUG/debug",
+            "disableDiscovery": false,
+            "enabled": true,
+            "processor": null,
+            "processorPath": "/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/RxList/rxlist/unspecified/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.lsjwzh/materialloadingprogressbar/0.5.4-RELEASE/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/demo/build/intermediates/exploded-aar/com.antfortune.freeline/runtime/0.8.4/jars/classes.jar:/Users/mst/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar:/Users/mst/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.0.2/6b9d5a69fd82f3c22b2f48489b66fe10eaeabd9a/rxjava-1.0.2.jar:/Users/mst/.gradle/caches/modules-2/files-2.1/io.reactivex/rxandroid/0.23.0/9c437ce12df38b57fde4e3bb38ef6859f85ff737/rxandroid-0.23.0.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/outputs/aar/rxlist-release.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/appcompat-v7/24.2.0/appcompat-v7-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/recyclerview-v7/24.2.0/recyclerview-v7-24.2.0.aar:/Users/mst/.gradle/caches/modules-2/files-2.1/com.lsjwzh/materialloadingprogressbar/0.5.4-RELEASE/c64fdd01f651baf3e94cb90e1bfd471a3f367c9f/materialloadingprogressbar-0.5.4-RELEASE.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-v4/24.2.0/support-v4-24.2.0.aar:/Users/mst/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/8.4.0/6c39334929311ff90a06c67ca310db1342fe2b6a/butterknife-8.4.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-vector-drawable/24.2.0/support-vector-drawable-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/24.2.0/animated-vector-drawable-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-compat/24.2.0/support-compat-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-core-ui/24.2.0/support-core-ui-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-core-utils/24.2.0/support-core-utils-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-media-compat/24.2.0/support-media-compat-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-fragment/24.2.0/support-fragment-24.2.0.aar"
+        },
+        "rxlist": {
+            "aptArgs": [
+                
+            ],
+            "aptOutput": "/Users/mst/AndroidStudioProjects/RxList/rxlist/build/generated/source/apt/release",
+            "disableDiscovery": false,
+            "enabled": true,
+            "processor": null,
+            "processorPath": "/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.lsjwzh/materialloadingprogressbar/0.5.4-RELEASE/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar:/Users/mst/AndroidStudioProjects/RxList/rxlist/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar:/Users/mst/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar:/Users/mst/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.0.2/6b9d5a69fd82f3c22b2f48489b66fe10eaeabd9a/rxjava-1.0.2.jar:/Users/mst/.gradle/caches/modules-2/files-2.1/io.reactivex/rxandroid/0.23.0/9c437ce12df38b57fde4e3bb38ef6859f85ff737/rxandroid-0.23.0.jar:/Users/mst/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-compiler/8.4.0/22f40cd3f01849c6deeab0a755d2082b2624581/butterknife-compiler-8.4.0.jar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/appcompat-v7/24.2.0/appcompat-v7-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/recyclerview-v7/24.2.0/recyclerview-v7-24.2.0.aar:/Users/mst/.gradle/caches/modules-2/files-2.1/com.lsjwzh/materialloadingprogressbar/0.5.4-RELEASE/c64fdd01f651baf3e94cb90e1bfd471a3f367c9f/materialloadingprogressbar-0.5.4-RELEASE.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-v4/24.2.0/support-v4-24.2.0.aar:/Users/mst/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/8.4.0/6c39334929311ff90a06c67ca310db1342fe2b6a/butterknife-8.4.0.aar:/Users/mst/.gradle/caches/modules-2/files-2.1/com.google.auto/auto-common/0.6/cf7212b0f8bfef12657b942df8f4f2cf032d3f41/auto-common-0.6.jar:/Users/mst/.gradle/caches/modules-2/files-2.1/com.google.auto.service/auto-service/1.0-rc2/51033a5b8fcf7039159e35b6878f106ccd5fb35f/auto-service-1.0-rc2.jar:/Users/mst/.gradle/caches/modules-2/files-2.1/com.squareup/javapoet/1.7.0/4fdcf1fc27c1a8f55d1109df986c923152f07759/javapoet-1.7.0.jar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-vector-drawable/24.2.0/support-vector-drawable-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/24.2.0/animated-vector-drawable-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-compat/24.2.0/support-compat-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-core-ui/24.2.0/support-core-ui-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-core-utils/24.2.0/support-core-utils-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-media-compat/24.2.0/support-media-compat-24.2.0.aar:/Users/mst/android_sdk/extras/android/m2repository/com/android/support/support-fragment/24.2.0/support-fragment-24.2.0.aar:/Users/mst/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar"
+        }
+    },
+    "apt_libraries": {
+        "dagger": false,
+        "butterknife": true
+    },
+    "auto_dependency": true,
+    "build_cache_dir": "/Users/mst/AndroidStudioProjects/RxList/demo/build/freeline",
+    "build_directory": "/Users/mst/AndroidStudioProjects/RxList/demo/build",
+    "build_script": "./gradlew :demo:assembleADEBUGDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "/Users/mst/android_sdk/build-tools/24.0.2",
+    "build_tools_version": "24.0.2",
+    "compile_sdk_directory": "/Users/mst/android_sdk/platforms/android-24",
+    "compile_sdk_version": "android-24",
+    "databinding": [
+        
+    ],
+    "databinding_compiler_jar": "",
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "org.xyzmst.demo",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "/Users/mst/AndroidStudioProjects/RxList",
+    "freeline_gradle_plugin_version": "0.8.4",
+    "java_home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home",
+    "launcher": "org.xyzmst.demo.MainActivity",
+    "main_assets_directory": [
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUGDebug/assets",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/debug/assets",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUG/assets",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/main/assets"
+    ],
+    "main_jniLibs_directory": [
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUGDebug/jniLibs",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/debug/jniLibs",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUG/jniLibs",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/main/jniLibs"
+    ],
+    "main_jni_directory": [
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUGDebug/jni",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/debug/jni",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUG/jni",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/main/jni"
+    ],
+    "main_manifest_path": "/Users/mst/AndroidStudioProjects/RxList/demo/src/main/AndroidManifest.xml",
+    "main_project_dir": "demo",
+    "main_project_name": "demo",
+    "main_r_path": "/Users/mst/AndroidStudioProjects/RxList/demo/build/generated/source/r/ADEBUG/debug/R.java",
+    "main_res_directory": [
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUGDebug/res",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/debug/res",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUG/res",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/main/res"
+    ],
+    "main_src_directory": [
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUGDebug/java",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/debug/java",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUG/java",
+        "/Users/mst/AndroidStudioProjects/RxList/demo/src/main/java"
+    ],
+    "module_dependencies": {
+        "demo": [
+            "rxlist"
+        ],
+        "rxlist": [
+            
+        ]
+    },
+    "modules": [
+        {
+            "name": "demo",
+            "path": "/Users/mst/AndroidStudioProjects/RxList/demo"
+        },
+        {
+            "name": "rxlist",
+            "path": "/Users/mst/AndroidStudioProjects/RxList/rxlist"
+        }
+    ],
+    "package": "org.xyzmst.demo",
+    "product_flavor": "ADEBUG",
+    "project_source_sets": {
+        "demo": {
+            "main_assets_directory": [
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUGDebug/assets",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/debug/assets",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUG/assets",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/main/assets"
+            ],
+            "main_jniLibs_directory": [
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUGDebug/jniLibs",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/debug/jniLibs",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUG/jniLibs",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/main/jniLibs"
+            ],
+            "main_jni_directory": [
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUGDebug/jni",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/debug/jni",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUG/jni",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/main/jni"
+            ],
+            "main_manifest_path": "/Users/mst/AndroidStudioProjects/RxList/demo/src/main/AndroidManifest.xml",
+            "main_res_directory": [
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUGDebug/res",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/debug/res",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUG/res",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/main/res"
+            ],
+            "main_src_directory": [
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUGDebug/java",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/debug/java",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/ADEBUG/java",
+                "/Users/mst/AndroidStudioProjects/RxList/demo/src/main/java"
+            ]
+        },
+        "rxlist": {
+            "main_assets_directory": [
+                "/Users/mst/AndroidStudioProjects/RxList/rxlist/src/release/assets",
+                "/Users/mst/AndroidStudioProjects/RxList/rxlist/src/main/assets"
+            ],
+            "main_jniLibs_directory": [
+                "/Users/mst/AndroidStudioProjects/RxList/rxlist/src/release/jniLibs",
+                "/Users/mst/AndroidStudioProjects/RxList/rxlist/src/main/jniLibs"
+            ],
+            "main_jni_directory": [
+                "/Users/mst/AndroidStudioProjects/RxList/rxlist/src/release/jni",
+                "/Users/mst/AndroidStudioProjects/RxList/rxlist/src/main/jni"
+            ],
+            "main_manifest_path": "/Users/mst/AndroidStudioProjects/RxList/rxlist/src/main/AndroidManifest.xml",
+            "main_res_directory": [
+                "/Users/mst/AndroidStudioProjects/RxList/rxlist/src/release/res",
+                "/Users/mst/AndroidStudioProjects/RxList/rxlist/src/main/res"
+            ],
+            "main_src_directory": [
+                "/Users/mst/AndroidStudioProjects/RxList/rxlist/src/release/java",
+                "/Users/mst/AndroidStudioProjects/RxList/rxlist/src/main/java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "retrolambda": {
+        
+    },
+    "root_dir": "/Users/mst/AndroidStudioProjects/RxList",
+    "sdk_directory": "/Users/mst/android_sdk",
+    "use_jdk8": true
+}

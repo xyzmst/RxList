@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
+apply plugin: 'com.antfortune.freeline'
 
 
 android {
@@ -21,6 +22,17 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    productFlavors {
+        ADEBUG {}
+    }
+
+
+    freeline {
+        hack true
+        productFlavor 'ADEBUG'
+        //        autoDependency false
     }
 }
 
