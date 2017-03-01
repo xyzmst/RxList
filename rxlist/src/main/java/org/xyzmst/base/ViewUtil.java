@@ -5,9 +5,6 @@ import android.os.Build;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
-/**
- * Created by Administrator on 14-1-10.
- */
 public class ViewUtil {
     /**
      * 一次性执行onGlobalLayoutListener
@@ -63,5 +60,4 @@ public class ViewUtil {
     }
 
 
-//    public static
 }

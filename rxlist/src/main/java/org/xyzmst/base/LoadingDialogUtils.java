@@ -9,9 +9,6 @@ import android.support.v4.app.FragmentTransaction;
 
 
 
-/**
- * Created by panwenye on 15/1/3.
- */
 public class LoadingDialogUtils {
 
     public static @Nullable

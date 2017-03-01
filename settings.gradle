@@ -1,1 +1,1 @@
-include ':rxlist', ':demo'
+include ':rxlist', ':demo', ':rxcardview'

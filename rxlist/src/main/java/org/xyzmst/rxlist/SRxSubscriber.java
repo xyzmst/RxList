@@ -34,6 +34,7 @@ public abstract class SRxSubscriber<T> extends RxListBaseDataSubscriber<T> {
         }
     }
 
+
     public abstract void onBindViewHolder(RecyclerView.ViewHolder holder, T item, int position);
 
 

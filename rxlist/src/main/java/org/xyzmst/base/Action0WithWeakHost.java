@@ -5,12 +5,6 @@ import java.lang.reflect.Modifier;
 
 import rx.functions.Action0;
 
-/**
- * $CLASS_NAME
- *
- * @author Green
- * @since: 15/2/27 下午4:21
- */
 public class Action0WithWeakHost<H> implements Action0 {
     WeakReference<H> mWeakRefHost;
     public Action0WithWeakHost(H host){

@@ -16,14 +16,6 @@ import android.view.animation.AnimationUtils;
 
 import java.lang.reflect.Field;
 
-/**
- * @author green
- * @title BaseFragment
- * @description Fragment基础类
- * @modifier green
- * @date 15/1/9 上午9:51
- * @since 2014/5/12 3:06
- */
 public abstract class BaseFragment extends Fragment {
     // Arbitrary value; set it to some reasonable default
     private static final int DEFAULT_CHILD_ANIMATION_DURATION = 250;

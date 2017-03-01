@@ -13,9 +13,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- * Created by Administrator on 13-8-23.
- */
 public class NetworkUtil {
     public static int getConnectedType(Context context) {
         if (context != null) {

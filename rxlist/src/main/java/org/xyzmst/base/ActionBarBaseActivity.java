@@ -25,12 +25,7 @@ import java.util.concurrent.TimeUnit;
 import rx.android.schedulers.AndroidSchedulers;
 
 
-/**
- * 注意：使用loadingMask时，必须确保activity的根为id==root的RelativeLayout
- * Created by Administrator on 13-10-1.
- */
 public class ActionBarBaseActivity extends ActionBarActivity {
-    //    private Handler mTextColorHandler = new Handler();
     protected Toolbar mToolbar;
     protected View mContentView;
     private LoadingDialogFragment mLoadingDialogFragment;
