@@ -20,21 +20,4 @@
             />
     </android.support.v4.widget.SwipeRefreshLayout>
 
-    <RelativeLayout
-        android:id="@+id/loading_image_wrapper"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/text_color_white"
-        android:src="@drawable/loading_point_anim">
-
-        <ImageView
-            android:id="@+id/loading_image"
-            android:layout_width="166dp"
-            android:layout_height="166dp"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="120dp"
-            android:background="@color/text_color_white"
-            android:src="@drawable/loading_point_anim"/>
-    </RelativeLayout>
-
 </FrameLayout>

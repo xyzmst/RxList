@@ -1,12 +1,14 @@
 package org.xyzmst.rxlist.util;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import org.xyzmst.base.ActionBarBaseActivity;
 import org.xyzmst.rxlist.R;
 import org.xyzmst.rxlist.R2;
 import org.xyzmst.rxlist.RxBaseData;
@@ -28,7 +30,7 @@ import rx.Observable;
  * @date
  * @since 16/4/16 11:09
  **/
-public abstract class RxListActivity<T> extends ActionBarBaseActivity {
+public abstract class RxListActivity<T> extends ActionBarActivity {
 
     public RxLinearListFragment mFragment;
 
@@ -36,13 +38,18 @@ public abstract class RxListActivity<T> extends ActionBarBaseActivity {
     public TextView mTitle;
 
     public static final String TITLE = "TITLE";
+
+    @BindView(R2.id.cancel_button_wrapper)
+    public LinearLayout mCancelButtonWrapper;
+    @BindView(R2.id.common_toolbar)
+    public RelativeLayout mToolbar;
     private String title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.live_list);
+        setContentView(R.layout.rx_list);
         ButterKnife.bind(this);
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();

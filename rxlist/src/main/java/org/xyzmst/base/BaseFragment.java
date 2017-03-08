@@ -184,19 +184,11 @@ public abstract class BaseFragment extends Fragment {
 
 
     public final void hideLoadingDialog() {
-        if (getActivity() instanceof ActionBarBaseActivity) {
-//            ((ActionBarBaseActivity) getActivity()).hideLoadingAnim();
-        } else {
-            LoadingDialogUtils.hide(getChildFragmentManager(), getClass().getSimpleName());
-        }
+//        LoadingDialogUtils.hide(getChildFragmentManager(), getClass().getSimpleName());
     }
 
     public final void hideLoadingDialogAnim() {
-        if (getActivity() instanceof ActionBarBaseActivity) {
-            ((ActionBarBaseActivity) getActivity()).hideLoadingAnim();
-        } else {
-            LoadingDialogUtils.hide(getChildFragmentManager(), getClass().getSimpleName());
-        }
+//        LoadingDialogUtils.hide(getChildFragmentManager(), getClass().getSimpleName());
     }
 
 

@@ -1,6 +1,5 @@
 package org.xyzmst.rxlist.fragment;
 
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -9,8 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 import org.xyzmst.base.BaseFragment;
 import org.xyzmst.rxlist.R;
@@ -36,10 +33,6 @@ public abstract class RxListFragment extends BaseFragment {
     public RecyclerView mRecyclerView;
     @BindView(R2.id.swipeLayout)
     public SwipeRefreshLayout mSwipeLayout;
-    @BindView(R2.id.loading_image)
-    ImageView mLoadingImage;
-    @BindView(R2.id.loading_image_wrapper)
-    RelativeLayout mLoadingImageWrapper;
     public int PAGE_COUNT = 20;
     public int TOTAL_COUNT = 0;
     public int cursor = 0;
@@ -57,7 +50,7 @@ public abstract class RxListFragment extends BaseFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        setContentView(R.layout.channel_fragment);
+        setContentView(R.layout.rx_fragment);
         ButterKnife.bind(this, getFragmentViewRoot());
         return getFragmentViewRoot();
     }
@@ -79,9 +72,7 @@ public abstract class RxListFragment extends BaseFragment {
     @Override
     protected void onFragmentLayoutInit() {
         ButterKnife.bind(this, getFragmentViewRoot());
-
-        AnimationDrawable loadingImageDrawable = (AnimationDrawable) mLoadingImage.getDrawable();
-        loadingImageDrawable.start();
+        mSwipeLayout.setRefreshing(true);
         mSwipeLayout.setColorSchemeResources(android.R.color.holo_blue_bright, android.R.color.holo_green_light,
                 android.R.color.holo_orange_light, android.R.color.holo_red_light);
         mSwipeLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -180,8 +171,6 @@ public abstract class RxListFragment extends BaseFragment {
      * 隐藏loading和停止刷新
      */
     public void stopLoadingOrRfresh() {
-        if (mLoadingImageWrapper != null)
-            mLoadingImageWrapper.setVisibility(View.GONE);
         if (mSwipeLayout != null)
             mSwipeLayout.setRefreshing(false);
     }
