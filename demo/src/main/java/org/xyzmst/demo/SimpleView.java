@@ -19,8 +19,8 @@ import butterknife.BindView;
 public class SimpleView extends BaseCardFrameCard<String> {
 
 
-    @BindView(R.id.cotent)
-    TextView mCotent;
+    @BindView(R.id.cotent_view)
+    TextView mCotentView;
 
     public SimpleView(Context context) {
         super(context);
@@ -33,6 +33,6 @@ public class SimpleView extends BaseCardFrameCard<String> {
 
     @Override
     public void setData(String s) {
-        mCotent.setText(s);
+        mCotentView.setText(s);
     }
 }

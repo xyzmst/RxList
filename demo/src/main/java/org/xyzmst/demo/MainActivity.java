@@ -4,13 +4,13 @@ import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import org.xyzmst.rxlist.RxBaseData;
 import org.xyzmst.rxlist.adapter.RxSimpleViewHolder;
 import org.xyzmst.rxlist.util.RxListActivity;
 
 import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
 
 import rx.Observable;
 
@@ -37,12 +37,21 @@ public class MainActivity extends RxListActivity<String> {
     public Observable<RxBaseData<String>> bindData() {
         RxBaseData<String> rxBaseData = new RxBaseData<String>();
         rxBaseData.list = new ArrayList<String>();
-        rxBaseData.list.add("来个复杂点的！！！");
-        return Observable.just(rxBaseData).delay(2, TimeUnit.SECONDS);
+        rxBaseData.list.add("来个复杂点的列表！！！");
+        rxBaseData.list.add("viewpager");
+        rxBaseData.count = 2;
+        return Observable.just(rxBaseData);
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, String item, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, final String item, final int position) {
         ((SimpleView) holder.itemView).setData(item);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "xxx", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 }
