@@ -1,4 +1,4 @@
-package org.xyzmst.demo;
+package org.xyzmst.demo.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import org.xyzmst.demo.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

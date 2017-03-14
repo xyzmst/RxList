@@ -1,9 +1,11 @@
-package org.xyzmst.demo;
+package org.xyzmst.demo.view;
 
 import android.content.Context;
 import android.widget.TextView;
 
-import org.xyzmst.rxcardview.util.BaseCardFrameCard;
+
+import org.xyzmst.demo.R;
+import org.xyzmst.demo.view.BaseCardFrameCard;
 
 import butterknife.BindView;
 

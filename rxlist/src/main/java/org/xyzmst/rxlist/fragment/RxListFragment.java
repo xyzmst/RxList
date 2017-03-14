@@ -48,6 +48,7 @@ public abstract class RxListFragment extends BaseFragment {
     private int mBottom;
     private int mBColor = -1;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         setContentView(R.layout.rx_fragment);

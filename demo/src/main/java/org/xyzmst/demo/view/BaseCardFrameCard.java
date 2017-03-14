@@ -1,4 +1,4 @@
-package org.xyzmst.rxcardview.util;
+package org.xyzmst.demo.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+
 import butterknife.ButterKnife;
 
 /**
  * @author mac
- * @title GoodCard
- * @description 精品卡片
+ * @title
+ * @description
  * @modifier
  * @date
  * @since 15/8/17 上午11:15
@@ -60,10 +61,10 @@ public abstract class BaseCardFrameCard<T> extends FrameLayout {
         return params;
     }
 
-    public FrameLayout.LayoutParams getScaleParasFrameLayoutLayout(float scaleWidth, float scaleHight, int margin) {
+    public LayoutParams getScaleParasFrameLayoutLayout(float scaleWidth, float scaleHight, int margin) {
         int width = getFullWidh() - 2 * dp2px(margin);
         int heigh = (int) (width / (scaleWidth + 0.0) * (scaleHight + 0.0));
-        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(width, heigh);
+        LayoutParams params = new LayoutParams(width, heigh);
         params.gravity = Gravity.CENTER;
         return params;
     }

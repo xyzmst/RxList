@@ -38,5 +38,10 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':rxlist')
-    compile project(':rxcardview')
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    compile 'com.facebook.fresco:fresco:0.9.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    apt 'com.jakewharton:butterknife-compiler:8.5.1'
 }

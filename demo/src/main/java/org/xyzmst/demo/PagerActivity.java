@@ -10,12 +10,17 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
+import org.xyzmst.base.BaseFragment;
+import org.xyzmst.demo.view.SimpleView;
+import org.xyzmst.demo.view.ViewPagerTab;
 import org.xyzmst.rxlist.RxBaseData;
 import org.xyzmst.rxlist.SRxListFragmentBind;
 import org.xyzmst.rxlist.SRxSubscriber;
 import org.xyzmst.rxlist.adapter.RxAdapterBindView;
 import org.xyzmst.rxlist.adapter.RxSimpleViewHolder;
+import org.xyzmst.rxlist.fragment.RxLinearListFragment;
 import org.xyzmst.rxlist.fragment.RxListFragment;
+import org.xyzmst.rxlist.fragment.RxSGrid2ListFragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -41,19 +46,17 @@ public class PagerActivity extends ActionBarActivity {
     ViewPager mViewPager;
     private ArrayList<PagerInfo> fragmentList;
     private FragmentViewPagerAdapter myViewPagerAdapter;
-    private HashMap<Object, Fragment> fragmentWeakContainer = new HashMap<Object, Fragment>();
+    private HashMap<Object, BaseFragment> fragmentWeakContainer = new HashMap<Object, BaseFragment>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pager_activity);
         ButterKnife.bind(this);
-        mTab.addItem("tab1", 0);
-        mTab.addItem("tab2", 1);
-        mTab.addItem("tab3", 2);
+        mTab.addItem("RxLinearListFragmentDemo", 0);
+        mTab.addItem("RxSGrid2ListFragmentDemo", 1);
         mTab.changeTab(0);
         initViewPager();
-
     }
 
     private void initViewPager() {
@@ -61,11 +64,9 @@ public class PagerActivity extends ActionBarActivity {
         myViewPagerAdapter = new FragmentViewPagerAdapter(getSupportFragmentManager());
         mViewPager.setAdapter(myViewPagerAdapter);
         PagerInfo pagerInfo;
-        pagerInfo = new PagerInfo(RxListFragment.class);
+        pagerInfo = new PagerInfo(RxLinearListFragment.class);
         myViewPagerAdapter.addItem(pagerInfo);
-        pagerInfo = new PagerInfo(RxListFragment.class);
-        myViewPagerAdapter.addItem(pagerInfo);
-        pagerInfo = new PagerInfo(RxListFragment.class);
+        pagerInfo = new PagerInfo(RxSGrid2ListFragment.class);
         myViewPagerAdapter.addItem(pagerInfo);
         mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -94,12 +95,12 @@ public class PagerActivity extends ActionBarActivity {
 
         @Override
         public Fragment getItem(int position) {
-            final Fragment mWeakFragment = fragmentWeakContainer.get(position);
+            final BaseFragment mWeakFragment = fragmentWeakContainer.get(position);
             if (mWeakFragment != null) {
                 return mWeakFragment;
             }
             Bundle bundle = new Bundle();
-            return Fragment.instantiate(PagerActivity.this.getApplicationContext(), fragmentList.get(position).aClass.getName(), bundle);
+            return BaseFragment.instantiate(PagerActivity.this.getApplicationContext(), fragmentList.get(position).aClass.getName(), bundle);
         }
 
         @Override
@@ -108,8 +109,8 @@ public class PagerActivity extends ActionBarActivity {
         }
 
         @Override
-        public Object instantiateItem(ViewGroup container, final int position) {
-            Fragment mWeakFragment = fragmentWeakContainer.get(position);
+        public BaseFragment instantiateItem(ViewGroup container, final int position) {
+            BaseFragment mWeakFragment = fragmentWeakContainer.get(position);
             if (mWeakFragment == null) {
                 final RxListFragment fragment = (RxListFragment) super.instantiateItem(container, position);
                 initFragmentData(position, fragment);

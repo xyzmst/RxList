@@ -1,11 +1,12 @@
 package org.xyzmst.demo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
+import org.xyzmst.demo.view.SimpleView;
 import org.xyzmst.rxlist.RxBaseData;
 import org.xyzmst.rxlist.adapter.RxSimpleViewHolder;
 import org.xyzmst.rxlist.util.RxListActivity;
@@ -21,6 +22,7 @@ public class MainActivity extends RxListActivity<String> {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mToolbar.setVisibility(View.GONE);
+        mTitle.setText("");
     }
 
     @Override
@@ -37,9 +39,8 @@ public class MainActivity extends RxListActivity<String> {
     public Observable<RxBaseData<String>> bindData() {
         RxBaseData<String> rxBaseData = new RxBaseData<String>();
         rxBaseData.list = new ArrayList<String>();
-        rxBaseData.list.add("来个复杂点的列表！！！");
-        rxBaseData.list.add("viewpager");
-        rxBaseData.count = 2;
+        rxBaseData.list.add("PagerActivity");
+        rxBaseData.list.add("RxScridActivity");
         return Observable.just(rxBaseData);
     }
 
@@ -49,9 +50,16 @@ public class MainActivity extends RxListActivity<String> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "xxx", Toast.LENGTH_SHORT).show();
+                Intent intent = null;
+                if (position == 0) {
+                    intent = new Intent(MainActivity.this, PagerActivity.class);
+                } else {
+                    intent = new Intent(MainActivity.this, RxSGridActivityDemo.class);
+                }
+                startActivity(intent);
             }
         });
+
 
     }
 }

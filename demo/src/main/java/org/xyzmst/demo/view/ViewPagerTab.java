@@ -1,4 +1,4 @@
-package org.xyzmst.demo;
+package org.xyzmst.demo.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+
+import org.xyzmst.demo.R;
 
 import java.util.ArrayList;
 

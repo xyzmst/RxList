@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="org.xyzmst.demo.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -18,11 +18,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SimpleActivity"
+            android:name="org.xyzmst.demo.SimpleActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".PagerActivity"
+            android:name="org.xyzmst.demo.PagerActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RxSGridActivityDemo"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>
