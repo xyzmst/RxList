@@ -29,7 +29,6 @@ public class RxSGridActivityDemo extends RxSGridActivity {
 
     @Override
     public void bindDubFragment() {
-        mTitle.setText("RxSGridActivityDemo");
         SRxListFragmentBind
                 .bindView(new RxAdapterBindView() {
                     @Override
