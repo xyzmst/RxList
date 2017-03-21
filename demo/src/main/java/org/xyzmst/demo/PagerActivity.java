@@ -144,9 +144,10 @@ public class PagerActivity extends ActionBarActivity {
                     public Observable<RxBaseData<String>> bindData() {
                         RxBaseData<String> data = new RxBaseData<String>();
                         data.list = new ArrayList<String>();
-                        for (int i = 0; i < 10; i++) {
+                        for (int i = 0; i < 20; i++) {
                             data.list.add(position + "-" + i);
                         }
+                        data.count = 50;
                         return Observable.just(data);
                     }
 
