@@ -18,11 +18,11 @@ import rx.Observable;
 public class MainActivity extends RxListActivity<String> {
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mToolbar.setVisibility(View.GONE);
-        mTitle.setText("");
     }
 
     @Override
